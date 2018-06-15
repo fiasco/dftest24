@@ -1,15 +1,16 @@
 project:
   machine_name: dftest24
-  prefix: BLT
-  human_name: 'BLTed 8'
+  prefix: DT2
+  human_name: 'DF Test 24'
   profile:
-    name: lightning
+    name: standard
   local:
     protocol: http
-    hostname: 'local.${project.machine_name}.com'
+    hostname: local.dftest24.com
 git:
   default_branch: master
-  remotes: {  }
+  remotes:
+    - 'dftest24@svn-5767.devcloud.hosting.acquia.com:dftest24.git'
 drush:
   aliases:
     remote: '${project.machine_name}.test'
@@ -32,3 +33,5 @@ modules:
   prod:
     enable: [acquia_connector, shield]
     uninstall: [devel, views_ui]
+cm:
+  strategy: config-split
