@@ -1,16 +1,16 @@
 project:
-  machine_name: dftest24
+  machine_name: dftest25
   prefix: DT2
-  human_name: 'DF Test 24'
+  human_name: 'DF Test 25'
   profile:
     name: standard
   local:
     protocol: http
-    hostname: local.dftest24.com
+    hostname: local.dftest25.com
 git:
   default_branch: master
   remotes:
-    - 'dftest24@svn-5767.devcloud.hosting.acquia.com:dftest24.git'
+    - 'dftest25@svn-5767.devcloud.hosting.acquia.com:dftest25.git'
 drush:
   aliases:
     remote: '${project.machine_name}.test'
